@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  server:
+    build: ./server
+    container_name: connectx-server
+    ports:
+      - '5000:5000'
+    env_file:
+      - ./server/.env
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/connectx
+      - FRONTEND_URL=http://localhost:80
+    depends_on:
+      - mongo
+
+  client:
+    build: ./client
+    container_name: connectx-client
+    ports:
+      - '80:80'
+    depends_on:
+      - server
+
+  mongo:
+    image: mongo:latest
+    container_name: connectx-mongo
+    ports:
+      - '27017:27017'
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  mongo-data:
