@@ -1,5 +1,4 @@
-<div align="center">
-  <img src="https://via.placeholder.com/150?text=ConnectX+Logo" alt="ConnectX Logo" />
+<div>
   <h1>ConnectX</h1>
   <p><em>Conversations, Simplified.</em></p>
 
