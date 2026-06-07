@@ -140,12 +140,12 @@ Built specifically for students, agile teams, and friend groups, it bridges the 
   │   (Vite)    │                    │  + Socket.IO     │
   └─────────────┘                    └────────┬─────────┘
                                               │
-                    ┌───────────────┬─────────┴──────┬────────────────┐
-                    ▼               ▼                ▼                ▼
-              ┌──────────┐  ┌────────────┐  ┌───────────┐  ┌──────────────┐
-              │ MongoDB  │  │ Cloudinary │  │ Claude AI │  │ Spotify API  │
-              │ (Atlas)  │  │ (Media CDN)│  │ (Summaries│  │ (OAuth 2.0)  │
-              └──────────┘  └────────────┘  └───────────┘  └──────────────┘
+                    ┌───────────────┬─────────┴────┐
+                    ▼               ▼              ▼
+              ┌──────────┐  ┌────────────┐  ┌──────────────┐
+              │ MongoDB  │  │ Cloudinary │  │ Spotify API  │
+              │ (Atlas)  │  │ (Media CDN)│  │ (OAuth 2.0)  │
+              └──────────┘  └────────────┘  └──────────────┘
 ```
 
 **Socket.IO Event Flow:**
